@@ -30,7 +30,7 @@ function checkAnswers() {
     document.getElementById("question1-in").style.bordercolor = "red";
 }
   //OUTPUT Question2
-  if (question2 === "usa") {
+  if (question2 === "hotdog" || question2 === "hotdog!") {
     document.getElementById("question2-out").innerHTML = `
     <p>Correct</p>
     `;
@@ -48,7 +48,7 @@ function checkAnswers() {
   }
 
   //OUTPUT Question3
-  if (question3 === 1996) {
+  if (question3 === "short-term memory loss" || question3 === "memory loss") {
     document.getElementById("question3-out").innerHTML = `
     <p>Correct</p>
     `;
@@ -66,7 +66,7 @@ function checkAnswers() {
   }
 
   //OUTPUT Question4
-  if (question4 === 6) {
+  if (question4 === "simba") {
     document.getElementById("question4-out").innerHTML = `
     <p>Correct</p>
     `;
@@ -88,7 +88,7 @@ function checkAnswers() {
     outputEl.innerHTML = Math.round(mark * 10) / 10;
     outputEl.innerHTML = `
     <p>4/4 (100%) </p>
-    <p>Wow! You did amazing!</p>
+    <p>Great Job!</p>
     `;
 
   } else if(mark=== 0.75) {
@@ -116,7 +116,7 @@ function checkAnswers() {
     outputEl.innerHTML = Math.round(mark * 10) / 10;
     outputEl.innerHTML = `
     <p> 0/4 (0%) </p>
-    <p> Try reading the "About" page again! </p>
+    <p> Oh no, try again! </p>
     `;
   }
 }
