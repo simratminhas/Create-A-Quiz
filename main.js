@@ -1,16 +1,31 @@
-//Create A Quiz By Simrat
+ //Create A Quiz By Simrat
 
 //Event Listener
-document.getElementById("btn").addEventListener("click", checkAnswers);
+document.getElementById("btn").addEventListener("click", checkanswers);
 
+// Check answer code in function
 function checkAnswers() {
   //INPUT
-  let answer1 = +document.getElementById("incredibles").value;
-  let answer2 = +document.getElementById("mickey").value;
-  let answer3 = +document.getElementById("dory").value;
-  let answer4 = +document.getElementById("lionKing").value;
+  let question1 = document.getElementById("question1-in").value;
+  let question2 = document.getElementById("question2-in").value;
+  let question3 = document.getElementById("question3-in").value;
+  let question4 = document.getElementById("question4-in").value;
+  
   let outputEl = document.getElementById("output");
 
-  if (answer1 === edna) {
-  }
+  //Count Variables
+  let numMark = 0;
+
+  //OUTPUT Question1
+  if (question1 === edna) {
+    document.getElementById("question1-out").innerHTML = `<p>Correct</p>`;
+
+    document.getElementById("question1-out").style.color = "rgb(52, 253, 102)";
+    document.getElementById("question1-in").style.borderColor = "rgb(52, 253, 102)";
+    numMark = numMark + 1;
+  } else {
+    document.getElementById("question1-out").innerHTML = `<p>Incorrect</p>`;
+    
+    document.getElementById("question1-out").style.color = "red';
+    document.getElementById("question1-in").style.bordercolor = "red";
 }
